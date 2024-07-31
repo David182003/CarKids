@@ -25,32 +25,48 @@
             </ul>
         </div>
     </nav>
-    <section>
-        <div class="container_auto_one">
-            <div class="container_left">
-                <h3>Lamborguini</h3>
-            </div>
-            <div class="container_right">
-                <img src="img/image.png" alt="Not Image">
-            </div>
+    <section class="container_auto_one">
+        <div id="openModal">
+            <h4>Lamborguini</h4>
         </div>
-        <div class="container_auto_one">
-            <div class="container_left">
-                <h3>Lamborguini</h3>
-            </div>
-            <div class="container_right">
-                <img src="img/image.png" alt="Not Image">
-            </div>
-        </div>
-        <div class="container_auto_one">
-            <div class="container_left">
-                <h3>Lamborguini</h3>
-            </div>
-            <div class="container_right">
-                <img src="img/image.png" alt="Not Image">
-            </div>
+         <div class="Container_Car">
+        
         </div>
     </section>
 
+   
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario</h2>
+            <!-- Agrega un select para elegir el tiempo en el formulario -->
+            <form>
+                <label for="time">Tiempo:</label>
+                <select id="time" name="time">
+                    <option value="10">10 minutos - 5 soles</option>
+                    <option value="20">20 minutos - 10 soles</option>
+                    <option value="30">30 minutos - 15 soles</option>
+                    <option value="40">40 minutos - 20 soles</option>
+                    <option value="50">50 minutos - 25 soles</option>
+                    <option value="60">60 minutos - 30 soles</option>
+                </select><br><br>
+                <label for="paid">Pagado:</label>
+                <input type="checkbox" id="paid" name="paid"><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>   
+    </div>
+
+    <div class="float_activity_yape" id="activityyape">
+        <i id="QR" class='bx bx-qr' ></i>
+    </div>
+    <div class="float_yape" id="myYape">
+        <img class="yape" src="img/yape_David.jpg" alt="">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
