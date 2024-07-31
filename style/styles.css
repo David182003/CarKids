@@ -48,6 +48,23 @@ a{
 .Logo{
     width: 50px;
 }
+section{
+    display: grid;
+    gap: 20px;
+    padding: 2% 5%;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container_auto_one{
+    padding: 5%;
+    background-color:white;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 12px;
+    box-shadow: 1px 4px 20px var(--colorshadow);
+}
 @media (max-width:768px){
     #check:checked + .nav_menu{
         background-color:var(--colorcirculo);
