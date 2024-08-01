@@ -42,38 +42,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function startTimer(paid) {
-    intervalId = setInterval(function () {
-        if (timeLeft > 0) {
-            timeLeft--;
-            const minutes = Math.floor(timeLeft / 60);
-            const seconds = timeLeft % 60;
-            console.log(`Tiempo restante: ${minutes} minutos ${seconds} segundos`);
-        } else {
-            clearInterval(intervalId);
-            if (!paid) {
-                alert("El tiempo ha expirado y no ha pagado. Por favor, pague para continuar.");
-            } else {
-                alert("El tiempo ha expirado. Gracias por pagar.");
-            }
-        }
-    }, 1000); // cada segundo
-}
-
 const form = document.querySelector('form');
 const containerAutoOne = document.querySelector('.container_auto_one');
 
 // ...
-
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const tiempo = document.querySelector('#time').value;
     const pagado = document.querySelector('#paid').checked;
-  
     const datos = `
   <div class="Container_Car">
-        
-        
       <div class="container_left">
         <h3>Tiempo: ${tiempo} minutos</h3>
         <p class="pagado ${pagado ? 'pagado-verde' : 'pagado-rojo'}"> Pagado: ${pagado ? 'Sí' : 'No'}</p>
@@ -82,6 +60,5 @@ form.addEventListener('submit', (e) => {
         <img src="img/image.png" alt="Not Image">
       </div> </div>
     `;
-  
     containerAutoOne.innerHTML += datos;
   });

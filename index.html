@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style/styles.css">
-    <title>Menu</title>
+    <title>CarKids</title>
 </head>
 <body>
     <nav>
@@ -13,7 +13,8 @@
             <img class="Logo" src="img/Logo.png" alt="Imagen No Cargada">
         </div>
         <div class="container_two">
-            <label for="check" class="checked">
+
+            <!-- <label for="check" class="checked">
                 <i class='bx bx-menu' id="menu"></i>
             </label>
             <input type="checkbox" id="check">
@@ -22,21 +23,50 @@
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Productos</a></li>
                 <li><button class="btn_empezar">Empezar</button></li>
-            </ul>
+            </ul> -->
+
+
+            <!-- QR -->
+            <label for="checkyape" class="checked" id="yapeQrConainer">
+                <i id="QR" class='bx bx-qr' ></i>
+            </label>
+            <input type="checkbox" id="checkyape">
+            <div class="float_yape" id="myYape">
+                
+                <div class="container_yape">
+                    <i id="Line" class='bx bx-minus'></i>
+                    <div class="Conainer_Content_yape">
+                        <h2 class="ScanQR">Scan QR Code</h2>
+                        <p class="Text_QR">Place QR inside the frame to scan</p>
+                        <img class="yape" src="img/yape_David.png" alt="">
+                    </div>
+                    
+                </div>
+            
+            </div>
+
         </div>
     </nav>
-    <div id="openModal" class="OpenModal">
-            <h4>Lamborguini</h4>
+    <div class="Comand">
+        <div class="container_btn_Comand" id="openModal">
+            <i class='bx bx-plus' style='color:#fffdfd;width: 15px;'  ></i>
+            <h5>New</h5>
+        </div>
+        <div class="container_btn_Comand">
+            <i class='bx bx-plus' style='color:#fffdfd;width: 15px;'  ></i>
+            <h5>Delete</h5>
+        </div>
+        <div class="container_btn_Comand">
+            <i class='bx bx-plus' style='color:#fffdfd;width: 15px;'  ></i>
+            <h5>Update</h5>
+        </div>
     </div>
+    <!-- <div id="openModal" class="OpenModal">
+            <h4>Lamborguini</h4>
+    </div> -->
     <section class="container_auto_one">
         
-         
     </section>
-
-   
-
-
-
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -52,25 +82,15 @@
                     <option value="50">50 minutos - 25 soles</option>
                     <option value="60">60 minutos - 30 soles</option>
                 </select><br><br>
-                <label for="paid">Pagado:</label>
-                <input type="checkbox" id="paid" name="paid"><br><br>
-                <input type="submit" value="Enviar">
+                <label class="pagad" for="paid">Pagado:</label>
+                <input class="pag" type="checkbox" id="paid" name="paid"><br><br>
+                <input class="enviar" type="submit" value="Enviar">
             </form>
         </div>   
     </div>
 
     <div class="float_activity_yape" id="activityyape">
-        <label for="checkyape" class="checked" id="yapeQrConainer">
-            <i id="QR" class='bx bx-qr' ></i>
-        </label>
-        <input type="checkbox" id="checkyape">
-        <div class="float_yape" id="myYape">
-            <div class="container_yape">
-                
-                <img class="yape" src="img/yape_David.png" alt="">
-            </div>
         
-        </div>
     </div>
     
 
