@@ -76,7 +76,12 @@ a{
     display: grid;
     gap: 10px;
     border-radius: 12px;
+<<<<<<< HEAD
     padding: 5%; 
+=======
+    padding: 5%;
+    
+>>>>>>> 1b0aa3ea960d316a48c798d2b556d7f15bc146f0
     border: 1px solid rgb(204, 204, 204);
     grid-template-columns: 1fr 1fr;
 }
