@@ -64,6 +64,8 @@ a{
     gap: 10px;
     border-radius: 12px;
     padding: 5%;
+    background-color: red;
+    
     border: 1px solid rgb(204, 204, 204);
     grid-template-columns: 1fr 1fr;
 }
@@ -91,6 +93,7 @@ section{
     left: 0;
     bottom: 0vh;
     width: 100%;
+    z-index: 3;
     border-radius: 12px 12px 0px 0px;
     height: 45%;
     box-shadow: 1px 1px 10px black;
@@ -138,11 +141,13 @@ h3{
     }
     #checkyape:checked + .float_yape{
         background-color:var(--colorcirculoyape);
+        z-index: 3;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
     .float_yape{
         position: fixed;
         left: 0px;
+        
         flex-direction: column;
         display: flex;
         align-items: center;
