@@ -2,6 +2,7 @@
     --black:#000;
     --colorshadow:rgba(73, 121, 255, 0.418);
     --colorcirculo:#00ff15;
+    --colorcirculoyape:#4f0052;
 }
 *{
     box-sizing: border-box;
@@ -18,6 +19,9 @@ nav{
     grid-template-columns: 1fr 2fr;
 }
 .checked, #check{
+    display: none;
+}
+#checkyape{
     display: none;
 }
 .container_one{
@@ -54,33 +58,48 @@ section{
     background-color: transparent;
     padding: 10% 5%;
 }
+.closee{
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    font-size: 30px;
+    color: white;
+}
 .yape{
-    width: 40vh;
+    width: 50%;
+    margin-top: -80px;
 }
 .float_yape{
     display: none; /* Ocultar el modal por defecto */
     position: fixed; /* Fijar el modal a la ventana */
     z-index: 1; /* Colocar el modal encima de otros elementos */
     left: 0;
-    top: 0;
+    bottom: 0vh;
     width: 100%;
-    height: 100%;
-    overflow: auto; /* Habilitar el scroll si el contenido es muy grande */
-    background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
-
+    border-radius: 12px 12px 0px 0px;
+    height: 45%;
+    box-shadow: 1px 1px 10px black;
+/* Habilitar el scroll si el contenido es muy grande */
+    background-color: rgb(95, 0, 104); /* Fondo semitransparente */
 }
-.float_activity_yape{
-    position: fixed;
-    bottom: 5%;
-    right: 10%;
-    height: 8vh;
+.container_yape{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 8vh;
-    border-radius: 12px;
+    height: 100%;
+}
+#yapeQrConainer{
+    position: fixed;
+    bottom: 0%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
     background-color: white;
-    box-shadow: 1px 4px 20px var(--colorshadow);
+    border-radius: 12px 12px 0px 0px;
+    border-top: 1px solid rgb(214, 214, 214);
 }
 #QR{
     font-size: 35px;
@@ -101,6 +120,25 @@ h3{
     #check:checked + .nav_menu{
         background-color:var(--colorcirculo);
         clip-path:   circle(100% at center);
+    }
+    #checkyape:checked + .float_yape{
+        background-color:var(--colorcirculoyape);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .float_yape{
+        position: fixed;
+        left: 0px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding-top: 10%;
+        margin-top: 68px;
+        background-color:var(--colorcirculoyape);
+        height: 40%;
+        z-index: -4;
+        clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+        transition: clip-path 1s ease-in-out;
     }
     .checked{
         display: block;

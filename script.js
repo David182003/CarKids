@@ -3,15 +3,15 @@ const modal = document.getElementById("myModal");
 const yape = document.getElementById("myYape");
 const yapeactivity = document.getElementById("activityyape");
 const btn = document.getElementById("openModal");
+const span2 = document.getElementsByClassName("closee")[0];
 const span = document.getElementsByClassName("close")[0];   
 
-yapeactivity.onclick = function(){
-    yape.style.display = "block";
-}
+
 // Cuando se hace clic en el botón, se muestra el modal
 btn.onclick = function() {
   modal.style.display = "block";
 }
+
 
 // Cuando se hace clic en la "x", se cierra el modal
 span.onclick = function() {
