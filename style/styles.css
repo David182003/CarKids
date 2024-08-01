@@ -64,7 +64,6 @@ a{
     gap: 10px;
     border-radius: 12px;
     padding: 5%;
-    background-color: red;
     
     border: 1px solid rgb(204, 204, 204);
     grid-template-columns: 1fr 1fr;
