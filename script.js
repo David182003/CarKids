@@ -61,7 +61,7 @@ function startTimer(paid) {
 }
 
 const form = document.querySelector('form');
-const containerAutoOne = document.querySelector('.Container_Car');
+const containerAutoOne = document.querySelector('.container_auto_one');
 
 // ...
 
@@ -71,14 +71,16 @@ form.addEventListener('submit', (e) => {
     const pagado = document.querySelector('#paid').checked;
   
     const datos = `
-  
+  <div class="Container_Car">
+        
+        
       <div class="container_left">
         <h3>Tiempo: ${tiempo} minutos</h3>
         <p class="pagado ${pagado ? 'pagado-verde' : 'pagado-rojo'}"> Pagado: ${pagado ? 'Sí' : 'No'}</p>
       </div>
       <div class="container_right">
         <img src="img/image.png" alt="Not Image">
-      </div> 
+      </div> </div>
     `;
   
     containerAutoOne.innerHTML += datos;

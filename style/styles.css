@@ -49,8 +49,23 @@ a{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+#menu{
+    color: black;
+}
 .Logo{
     width: 50px;
+}
+.OpenModal{
+    padding:5% 5%;
+}
+.Container_Car{
+    display: grid;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 5%;
+    border: 1px solid rgb(204, 204, 204);
+    grid-template-columns: 1fr 1fr;
 }
 section{
     display: grid;
@@ -183,7 +198,10 @@ h3{
     padding: 5px;
     border-radius: 5px;
   }
-  
+  .pagado{
+    width: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   .pagado-rojo {
     background-color: #F7C6C6; /* rojo claro */
     padding: 5px;
