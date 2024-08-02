@@ -24,14 +24,7 @@ nav{
     grid-template-columns: 1fr 2fr;
 }
 
-.Comand{
-    height: 15vh;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    padding: 5% 10%;
-}
+
 .checked, #check{
     display: none;
 }
@@ -73,15 +66,23 @@ a{
 .OpenModal{
     padding:5% 5%;
 }
+.reloj{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.container_left{
+    
+
+}
 .Container_Car{
     display: grid;
     gap: 10px;
-    border-radius: 12px;
-
-
+    /* border-radius: 12px; */
     padding: 5%;
-
-    border: 1px solid rgb(204, 204, 204);
+    background-color:#ddedf51f;
+    border-left: 1px solid rgb(209, 203, 203);
     grid-template-columns: 1fr 1fr;
 }
 section{
@@ -137,18 +138,36 @@ section{
     align-items: center;
     justify-content: center;
     height: 100%;
+    padding: 0% 5%;
 }
 .btn_comand{
     background-color: black;
 }
-.container_btn_Comand{
-    background-color: rgb(0, 0, 0);
-    border-radius: 8px;
+.Comand{
+    height:50px;
     display: flex;
-    height: 6vh;
+    gap: 10px;
+    position: fixed;
+    right: 0;
+    width: 100%;
     align-items: center;
+    bottom: 0;
+    border-radius: 12px 12px 0px 0px;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    box-shadow: 0px 0px 10px var(--colorshadow);
     justify-content: center;
-    width: 50%;
+}
+.container_btn_Comand{
+    display: flex;
+    
+    height: 7vh;
+    bottom: 5%;
+    align-items: center;
+
+    justify-content: center;
+    width: 100%;
+    right: 5%;
     padding: 1%;
     gap: 20px;
 }

@@ -53,7 +53,8 @@ form.addEventListener('submit', (e) => {
     const datos = `
   <div class="Container_Car">
       <div class="container_left">
-        <h3>Tiempo: ${tiempo} minutos</h3>
+      <h3>Lamborguini</h3><br>
+        <h3 class="reloj"><i class='bx bx-time-five' undefined ></i>${tiempo} m</h3><br>
         <p class="pagado ${pagado ? 'pagado-verde' : 'pagado-rojo'}"> Pagado: ${pagado ? 'Sí' : 'No'}</p>
       </div>
       <div class="container_right">
