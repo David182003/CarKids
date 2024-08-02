@@ -31,7 +31,7 @@ let timeLeft;
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form");
     const timeSelect = document.querySelector("#time");
-    const paidCheckbox = document.querySelector("#paid");
+    const paidCheckbox = document.querySelector("#bluetooth");
 
     form.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -49,7 +49,7 @@ const containerAutoOne = document.querySelector('.container_auto_one');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const tiempo = document.querySelector('#time').value;
-    const pagado = document.querySelector('#paid').checked;
+    const pagado = document.querySelector('#bluetooth').checked;
     const datos = `
   <div class="Container_Car">
       <div class="container_left">
